@@ -1,0 +1,18 @@
+﻿<Window x:Class="Sliders.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sliders.Wpf"
+        mc:Ignorable="d"
+        Title="Sliders" Height="276" Width="494">
+    <Grid>
+        <Slider x:Name="sldGetal1" HorizontalAlignment="Left" Margin="76,12,0,0" VerticalAlignment="Top" AutoToolTipPlacement="BottomRight" TickPlacement="BottomRight" IsSnapToTickEnabled="True" Width="200"/>
+        <Slider x:Name="sldGetal2" HorizontalAlignment="Left" Margin="76,55,0,0" VerticalAlignment="Top" AutoToolTipPlacement="BottomRight" TickPlacement="BottomRight" IsSnapToTickEnabled="True" Width="200"/>
+        <Label Content="Eerste" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tweede" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnTestSlider" Content="Test sliders" HorizontalAlignment="Left" Margin="121,108,0,0" VerticalAlignment="Top" Width="98" Click="BtnTestSlider_Click"/>
+        <Label x:Name="lblBoodschap" Content="Plaats sliders en klik op de knop" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top" Width="423"/>
+
+    </Grid>
+</Window>
