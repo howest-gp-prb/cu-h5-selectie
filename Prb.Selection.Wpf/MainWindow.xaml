@@ -9,11 +9,11 @@
     <Grid>
         <Button x:Name="btnTestBool" Content="Test Bool" HorizontalAlignment="Left" Margin="20,28,0,0" VerticalAlignment="Top" Width="105" Click="BtnTestBool_Click"/>
         <Button x:Name="btnTestNot" Content="Test NOT" HorizontalAlignment="Left" Margin="20,53,0,0" VerticalAlignment="Top" Width="105" Click="BtnTestNot_Click"/>
-        <Button x:Name="btnIsHetAvond" Content="Is het avond?" HorizontalAlignment="Left" Margin="20,78,0,0" VerticalAlignment="Top" Width="105" Click="BtnIsHetAvond_Click"/>
-        <Button x:Name="btnIsHetNacht" Content="Is het nacht?" HorizontalAlignment="Left" Margin="20,103,0,0" VerticalAlignment="Top" Width="105" Click="BtnIsHetNacht_Click"/>
-        <Button x:Name="btnWeekDag" Content="Weekdag" HorizontalAlignment="Left" Margin="20,128,0,0" VerticalAlignment="Top" Width="105" Click="BtnWeekDag_Click"/>
-        <Button x:Name="btnTicketPrijs" Content="Ticketprijs" HorizontalAlignment="Left" Margin="20,155,0,0" VerticalAlignment="Top" Width="105" Click="BtnTicketPrijs_Click"/>
-        <Button x:Name="btnWeekDagSwitch" Content="Weekdag (Switch)" HorizontalAlignment="Left" Margin="20,180,0,0" VerticalAlignment="Top" Width="105" Click="BtnWeekDagSwitch_Click"/>
+        <Button x:Name="btnCheckDay" Content="Is het avond?" HorizontalAlignment="Left" Margin="20,78,0,0" VerticalAlignment="Top" Width="105" Click="BtnIsHetAvond_Click"/>
+        <Button x:Name="btnCheckNight" Content="Is het nacht?" HorizontalAlignment="Left" Margin="20,103,0,0" VerticalAlignment="Top" Width="105" Click="BtnIsHetNacht_Click"/>
+        <Button x:Name="btnWeekDay" Content="Weekdag" HorizontalAlignment="Left" Margin="20,128,0,0" VerticalAlignment="Top" Width="105" Click="BtnWeekDag_Click"/>
+        <Button x:Name="btnTicketPrice" Content="Ticketprijs" HorizontalAlignment="Left" Margin="20,155,0,0" VerticalAlignment="Top" Width="105" Click="BtnTicketPrijs_Click"/>
+        <Button x:Name="btnWeekDaySwitch" Content="Weekdag (Switch)" HorizontalAlignment="Left" Margin="20,180,0,0" VerticalAlignment="Top" Width="105" Click="BtnWeekDagSwitch_Click"/>
 
     </Grid>
 </Window>
