@@ -25,6 +25,20 @@ namespace Prb.Selectie.Wpf
             InitializeComponent();
         }
 
+        private void IsEvening()
+        {
+            int uur = 19;
+            bool avond = (uur >= 18) && (uur <= 22);
+            MessageBox.Show("Om " + uur + " uur: " + avond.ToString(), "Is het al avond?");
+        }
+
+        private void IsNight()
+        {
+            int uur = 23;
+            bool nacht = (uur > 22) || (uur < 6);
+            MessageBox.Show("Om " + uur + " uur: " + nacht.ToString(), "Is het nacht?");
+        }
+
         private void BtnTestBool_Click(object sender, RoutedEventArgs e)
         {
             bool benjeklaar = false;
@@ -43,23 +57,9 @@ namespace Prb.Selectie.Wpf
             IsEvening();
         }
 
-        private void IsEvening()
-        {
-            int uur = 19;
-            bool avond = (uur >= 18) && (uur <= 22);
-            MessageBox.Show("Om " + uur + " uur: " + avond.ToString(), "Is het al avond?");
-        }
-
         private void BtnCheckNight_Click(object sender, RoutedEventArgs e)
         {
             IsNight();
-        }
-
-        private void IsNight()
-        {
-            int uur = 23;
-            bool nacht = (uur > 22) || (uur < 6);
-            MessageBox.Show("Om " + uur + " uur: " + nacht.ToString(), "Is het nacht?");
         }
 
         private void BtnWeekDay_Click(object sender, RoutedEventArgs e)
