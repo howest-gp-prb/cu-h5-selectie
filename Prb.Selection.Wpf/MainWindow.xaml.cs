@@ -38,31 +38,31 @@ namespace Prb.Selectie.Wpf
             MessageBox.Show(benjeklaar.ToString(), "Ben je klaar?");
         }
 
-        private void BtnIsHetAvond_Click(object sender, RoutedEventArgs e)
+        private void BtnCheckEvening_Click(object sender, RoutedEventArgs e)
         {
-            IsAvond();
+            IsEvening();
         }
 
-        private void IsAvond()
+        private void IsEvening()
         {
             int uur = 19;
             bool avond = (uur >= 18) && (uur <= 22);
             MessageBox.Show("Om " + uur + " uur: " + avond.ToString(), "Is het al avond?");
         }
 
-        private void BtnIsHetNacht_Click(object sender, RoutedEventArgs e)
+        private void BtnCheckNight_Click(object sender, RoutedEventArgs e)
         {
-            IsNacht();
+            IsNight();
         }
 
-        private void IsNacht()
+        private void IsNight()
         {
             int uur = 23;
             bool nacht = (uur > 22) || (uur < 6);
             MessageBox.Show("Om " + uur + " uur: " + nacht.ToString(), "Is het nacht?");
         }
 
-        private void BtnWeekDag_Click(object sender, RoutedEventArgs e)
+        private void BtnWeekDay_Click(object sender, RoutedEventArgs e)
         {
             string dagNaam;
             DateTime momenteel = DateTime.Now;
@@ -83,7 +83,7 @@ namespace Prb.Selectie.Wpf
             MessageBox.Show("Vandaag is het " + dagNaam, "Dag van de week");
         }
 
-        private void BtnTicketPrijs_Click(object sender, RoutedEventArgs e)
+        private void BtnTicketPrice_Click(object sender, RoutedEventArgs e)
         {
             int leeftijd = 30;
             int ticketPrijs;
@@ -109,7 +109,7 @@ namespace Prb.Selectie.Wpf
             MessageBox.Show("De prijs van je ticket bedraagt: " + ticketPrijs + " euro");
         }
 
-        private void BtnWeekDagSwitch_Click(object sender, RoutedEventArgs e)
+        private void BtnWeekDaySwitch_Click(object sender, RoutedEventArgs e)
         {
             string dagNaam;
             DateTime momenteel = DateTime.Now;
