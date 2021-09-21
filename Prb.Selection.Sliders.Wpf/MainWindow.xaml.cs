@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace Prb.Sliders.Wpf
 {
@@ -27,24 +14,24 @@ namespace Prb.Sliders.Wpf
 
         private void BtnTestSlider_Click(object sender, RoutedEventArgs e)
         {
-            int getal1 = (int)sldGetal1.Value;
-            int getal2 = (int)sldGetal2.Value;
-            string boodschap = "";
+            int number1 = (int)sldNumber1.Value;
+            int number2 = (int)sldNumber2.Value;
+            string message;
 
-            if (getal1 == getal2)
+            if (number1 == number2)
             {
-                boodschap = "eerste = tweede";
+                message = "eerste = tweede";
             }
-            else if (getal1 < getal2)
+            else if (number1 < number2)
             {
-                boodschap = "eerste < tweede";
+                message = "eerste < tweede";
             }
             else
             {
-                boodschap = "eerste > tweede";
+                message = "eerste > tweede";
             }
 
-            lblBoodschap.Content = boodschap;
+            lblMessage.Content = message;
         }
     }
 }
