@@ -21,8 +21,8 @@ namespace Prb.Raadspel.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
-        int teRaden;
-        int pogingen;
+        int toGuess;
+        int attempts;
         Random rnd = new Random();
 
         public MainWindow()
@@ -32,25 +32,25 @@ namespace Prb.Raadspel.Wpf
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            teRaden = rnd.Next(1, 11);
-            Debug.WriteLine("Te raden: " + teRaden);
-            pogingen = 0;
+            toGuess = rnd.Next(1, 11);
+            Debug.WriteLine("Te raden: " + toGuess);
+            attempts = 0;
         }
 
-        private void BtnGok_Click(object sender, RoutedEventArgs e)
+        private void BtnGuess_Click(object sender, RoutedEventArgs e)
         {
-            int gok = int.Parse(txtGok.Text);
-            if (gok == teRaden)
+            int guess = int.Parse(txtGuess.Text);
+            attempts++;
+
+            if (guess == toGuess)
             {
-                pogingen++;
-                lblGokjes.Content = "Je hebt het getal " + teRaden + " geraden na " + pogingen + " pogingen";
+                lblGuesses.Content = "Je hebt het getal " + toGuess + " geraden na " + attempts + " pogingen";
             }
             else
             {
-                lblGokjes.Content += gok.ToString() + Environment.NewLine;
-                txtGok.Text = "";
-                txtGok.Focus();
-                pogingen++;
+                lblGuesses.Content += guess + Environment.NewLine;
+                txtGuess.Text = "";
+                txtGuess.Focus();
             }
         }
     }
